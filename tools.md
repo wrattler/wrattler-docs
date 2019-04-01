@@ -6,14 +6,14 @@ other data science tools to plug into various parts of the system. This is
 made possible because Wrattler architecture differs from most other notebook
 systems in two ways:
 
- - Wrattler handles evaluation of notebook cells in the browser, which makes
+ - **Browser-based.** Wrattler handles evaluation of notebook cells in the browser, which makes
    it possible to add rich, interactive browser-based components to Wrattler.
    Standard code editor (as known from Jupyter) are one such built-in plugin,
    but it's equally possible to implement a spreadsheet plugin that lets users
    add a spreadsheet as one of their cells or implement an interactive data
    visualization plugin or data cleaning tool.
 
- - Wrattler keeps a dependency graph between cells and takes care of passing
+ - **Dependency tracking.** Wrattler keeps a dependency graph between cells and takes care of passing
    of data between cells. It manages evaluation and state of the notebook,
    which makes it possible to mix multiple languages in a single notebook.
    Language support can also be added via plugins and can either run code on
@@ -25,12 +25,12 @@ systems in two ways:
 Before discussing ways of integrating data science tools into Wrattler, here
 are a couple of ways of seeing what Wrattler looks like:
 
- * If you have less than 5 minutes, check out [Wrattler demo slides
+ * **Overview slides.** If you have less than 5 minutes, check out [Wrattler demo slides
    (PDF)](demo.pdf). This is a slide deck with screenshots, showing
    the main features of Wrattler.
- * If you have more time, you can also review [our TPS workshop poster
+ * **Architecture paper.** If you have more time, you can also review [our TPS workshop poster
    (PDF)](poster.pdf), which adds some more information on the architecture.  
- * If you have more than 15 minutes and Docker installed, you can run Wrattler
+ * **Running Wrattler.** If you have more than 15 minutes and Docker installed, you can run Wrattler
    easily on your computer by following [instructions here](https://github.com/wrattler/wrattler/blob/demo-mar-2019/Running_Wrattler_via_Docker.md). This
    comes with several sample notebooks showing the key features.
 
@@ -110,18 +110,3 @@ might be interesting for doing analysis on notebooks (e.g. to make
 recommendations based on past actions) or building refactoring tools that turn
 notebooks into production-ready code.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-x
